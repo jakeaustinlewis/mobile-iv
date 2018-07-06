@@ -45,4 +45,6 @@ Log in with Facebook or Google+
 Review section
 View history of IV requests
 
-<!-- ![Client Home Page]() -->
+![Phlebor Home Page](https://github.com/jakeaustinlewis/mobile-iv/blob/master/PhleborHomePage.png)
+![Client Home Page](https://github.com/jakeaustinlewis/mobile-iv/blob/master/ClientHomePage.jpg)
+![Phlebotomist Home Page](https://github.com/jakeaustinlewis/mobile-iv/blob/master/PhlebotomistHomePage.png)
