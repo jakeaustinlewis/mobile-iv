@@ -1,0 +1,228 @@
+body {
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #222; 
+  }
+  h1, h2, h3 {
+      margin: 0px;
+  }
+  
+    *{
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+  }
+  
+  body {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+
+  }
+
+  .backgroud-image {
+    background-color:  #3bafa9;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-width: 560px;
+    min-height: 540px;  
+  }
+ 
+.background-new-client {
+    background-color: #F1F1F1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-width: 560px;
+    min-height: 540px;  
+}
+
+
+  main {
+    /* margin: -75px; */
+    padding: 0px;
+    font-family: "Helvetica Neue";
+    font-weight: 700;
+    height: 100%;
+    height: 100%;
+    /* min-width: 960px;
+    min-height: 540px; */
+  }
+
+  .body-container {
+    position: relative;
+    /* width: 80%; */
+    /* margin: 30px auto 0px auto; */
+    /* padding: 0px 20px; */
+    box-sizing: border-box;
+    height: auto;
+    width: auto;
+    /* height: 100vh; */
+}
+
+.body-wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -75px;
+}
+
+/* .body-center {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+.navBar {
+    border-bottom: #17252b 1px solid; 
+    height:70px;
+    padding: 0px;
+}
+
+.greenText {
+    color: #3bafa9;
+}
+
+.white-text {
+    color: white;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.navbar-dark .navbar-brand {
+    color: #3bafa9;
+
+}
+
+.navbar-light .navbar-brand {
+    color: #3bafa9;
+}
+a.navbar-brand {
+    height: 100%;
+}
+.navbar-brand a{
+    height: 100%;
+}
+.navBar > a {
+    font-size: 40px;
+    padding: 0px;
+    margin-left: 10px;
+}
+
+
+.nav.navbar-nav.navbar-right li a {
+    color: #17252b;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(23, 37, 43, .5);
+}
+
+.navButton {
+    height: 100%;
+    position: relative;
+    color: #17252b;
+    text-decoration: none;
+    margin: 0px 5px;
+  }
+
+.navButton:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    background-color: #17252b;
+    visibility: hidden;
+    -webkit-transform: scaleX(0); 
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+.navButton:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+
+.buttons {
+    display: flex;
+    color: #17252b;
+}
+
+/* main a {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+  }
+
+main a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0); 
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+.buttons a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  } */
+
+.buttons a {
+    margin: 20px 20px 20px 0px;
+    color: white;
+}
+#main-title {
+    font-size: 120px;
+    font: "Helvetica Neue";
+}
+
+.bodySpacing {
+    margin: 0px 0px 20px 0px;
+}
+
+.formMargin {
+    margin-top: 20px;
+}
+
+.form-container {
+    position: relative;
+    width: 80%;
+    margin: 0px auto 0px auto;
+    /* display: flex;
+    justify-content: center; */
+}
+
+.signInBackgroundContainer {
+    /* height: 100%; */
+    width: 350px;
+    background-color: #F1F1F1;
+}
+
+.form-actions {
+    text-align: center;
+    width: 100%;
+}
+
+.noMargin {
+    margin:0px;
+}

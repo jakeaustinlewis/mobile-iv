@@ -38,13 +38,14 @@ Credit Card Information
 Medical Waivers
 Cell Phone Number
 
-Phlibotom
+
 
 # A list of nice to have features
 Log in with Facebook or Google+
 Review section
 View history of IV requests
 
+Mock up of the front pages.
 ![Phlebor Home Page](https://github.com/jakeaustinlewis/mobile-iv/blob/master/PhleborHomePage.png)
 ![Client Home Page](https://github.com/jakeaustinlewis/mobile-iv/blob/master/ClientHomePage.jpg)
 ![Phlebotomist Home Page](https://github.com/jakeaustinlewis/mobile-iv/blob/master/PhlebotomistHomePage.png)
