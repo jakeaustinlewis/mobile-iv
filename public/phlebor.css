@@ -1,44 +1,68 @@
 body {
     font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #222; 
-  }
-  h1, h2, h3 {
-      margin: 0px;
-  }
-  
-    *{
-      margin: 0px;
-      padding: 0px;
-      box-sizing: border-box;
-  }
-  
-  body {
+    color: #222;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
+}
 
-  }
-
-  .backgroud-image {
-    background-color:  #3bafa9;
+.backgroud-image {
+    background-color: #3bafa9;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
     min-width: 560px;
-    min-height: 540px;  
-  }
- 
+    min-height: 540px;
+}
+
 .background-new-client {
     background-color: #F1F1F1;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
     min-width: 560px;
-    min-height: 540px;  
+    min-height: 540px;
 }
 
+.background-new-driver {
+    background-image: url("./pictures/maniv.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-width: 560px;
+    min-height: 540px;
+}
 
-  main {
+#overlay {
+    /* position: fixed; Sit on top of the page content */
+    display: none;
+    /* Hidden by default */
+    width: 100%;
+    /* Full width (cover the whole page) */
+    height: 100%;
+    /* Full height (cover the whole page) */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Black background with opacity */
+    z-index: 2;
+    /* Specify a stack order in case you're using a different order for other elements */
+}
+
+main {
     /* margin: -75px; */
     padding: 0px;
     font-family: "Helvetica Neue";
@@ -47,17 +71,16 @@ body {
     height: 100%;
     /* min-width: 960px;
     min-height: 540px; */
-  }
+}
 
-  .body-container {
+.body-container {
     position: relative;
-    /* width: 80%; */
-    /* margin: 30px auto 0px auto; */
+    width: 80%;
+    margin: 30px auto 0px auto;
     /* padding: 0px 20px; */
     box-sizing: border-box;
-    height: auto;
-    width: auto;
     /* height: 100vh; */
+    height: 100%;
 }
 
 .body-wrapper {
@@ -67,6 +90,12 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: -75px;
+    flex-wrap: wrap;
+}
+
+.frontPageCharacter {
+    width: 500px;
+    height: 500px;
 }
 
 /* .body-center {
@@ -77,10 +106,9 @@ body {
     align-items: center;
 } */
 
-
 .navBar {
-    border-bottom: #17252b 1px solid; 
-    height:70px;
+    border-bottom: #17252b 1px solid;
+    height: 70px;
     padding: 0px;
 }
 
@@ -98,24 +126,25 @@ body {
 
 .navbar-dark .navbar-brand {
     color: #3bafa9;
-
 }
 
 .navbar-light .navbar-brand {
     color: #3bafa9;
 }
+
 a.navbar-brand {
     height: 100%;
 }
-.navbar-brand a{
+
+.navbar-brand a {
     height: 100%;
 }
-.navBar > a {
+
+.navBar>a {
     font-size: 40px;
     padding: 0px;
     margin-left: 10px;
 }
-
 
 .nav.navbar-nav.navbar-right li a {
     color: #17252b;
@@ -131,7 +160,7 @@ a.navbar-brand {
     color: #17252b;
     text-decoration: none;
     margin: 0px 5px;
-  }
+}
 
 .navButton:before {
     content: "";
@@ -142,18 +171,17 @@ a.navbar-brand {
     left: 0;
     background-color: #17252b;
     visibility: hidden;
-    -webkit-transform: scaleX(0); 
+    -webkit-transform: scaleX(0);
     transform: scaleX(0);
     -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
-  }
+}
 
 .navButton:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
-  }
-
+}
 
 .buttons {
     display: flex;
@@ -191,6 +219,7 @@ main a:before {
     margin: 20px 20px 20px 0px;
     color: white;
 }
+
 #main-title {
     font-size: 120px;
     font: "Helvetica Neue";
@@ -206,16 +235,28 @@ main a:before {
 
 .form-container {
     position: relative;
-    width: 80%;
+    width: 70%;
     margin: 0px auto 0px auto;
-    /* display: flex;
-    justify-content: center; */
+    height: 100%;
+    display: table-row;
+}
+
+.form-container-login {
+    position: relative;
+    width: 350px;
+    /* height: 100%; */
 }
 
 .signInBackgroundContainer {
-    /* height: 100%; */
     width: 350px;
     background-color: #F1F1F1;
+    display: table;
+}
+
+.logInContainer {
+    width: 100%;
+    width: 350px;
+
 }
 
 .form-actions {
@@ -224,5 +265,5 @@ main a:before {
 }
 
 .noMargin {
-    margin:0px;
+    margin: 0px;
 }

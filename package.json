@@ -1,0 +1,31 @@
+{
+  "name": "mobile-iv",
+  "version": "1.0.0",
+  "description": "# A project description For the Q2 Project, it brings me great joy to propose an idea that will provide a quick and painless service to ameliorate the adverse effects of dehydration to those in need. Hydradro.io, a mobile friendly and web application, allows users to request an intravenous therapy service delivered right to their location, no matter how absurd.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakeaustinlewis/mobile-iv.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jakeaustinlewis/mobile-iv/issues"
+  },
+  "homepage": "https://github.com/jakeaustinlewis/mobile-iv#readme",
+  "dependencies": {
+    "config": "^1.30.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "fs": "0.0.1-security",
+    "heroku": "^7.5.11",
+    "knex": "^0.15.0",
+    "method-override": "^2.3.10",
+    "morgan": "^1.9.0",
+    "pg": "^7.4.3"
+  }
+}
