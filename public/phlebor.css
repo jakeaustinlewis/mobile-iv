@@ -48,6 +48,23 @@ body {
     min-height: 540px;
 }
 
+.background-login {
+    background-color: #e8175d;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-width: 560px;
+    min-height: 540px;
+}
+.pattern-background {
+    background-image: url("./pictures/modernPattern.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60px;
+    min-width: 560px;
+    min-height: 540px;
+}
+
 #overlay {
     /* position: fixed; Sit on top of the page content */
     display: none;
@@ -76,11 +93,16 @@ main {
 .body-container {
     position: relative;
     width: 80%;
-    margin: 30px auto 0px auto;
+    /* margin: 30px auto 0px auto; */
+    margin: 0px auto 0px auto;
     /* padding: 0px 20px; */
     box-sizing: border-box;
     /* height: 100vh; */
     height: 100%;
+}
+
+.negativeMargin {
+    margin-top: -75px;
 }
 
 .body-wrapper {
@@ -90,7 +112,7 @@ main {
     justify-content: center;
     align-items: center;
     margin-top: -75px;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
 }
 
 .frontPageCharacter {
@@ -233,6 +255,17 @@ main a:before {
     margin-top: 20px;
 }
 
+.loginMargin {
+    margin-top: 40px;
+}
+
+.login-container {
+    width: 100%;
+    position: relative;
+    width: 350px;
+    background-color: #F1F1F1;
+}
+
 .form-container {
     position: relative;
     width: 70%;
@@ -256,7 +289,6 @@ main a:before {
 .logInContainer {
     width: 100%;
     width: 350px;
-
 }
 
 .form-actions {
