@@ -14,6 +14,7 @@ let newDriver = require('./routes/newDriver');
 let newClient = require('./routes/newClient');
 let login = require('./routes/login');
 let clientHomePage = require('./routes/clientHome');
+let clientHomePageEdit = require('./routes/clientHomeEdit');
 
 
 app.set('views', path.join(__dirname, 'views'));
@@ -49,6 +50,7 @@ app.use(newDriver);
 app.use(newClient);
 app.use(login);
 app.use(clientHomePage);
+app.use(clientHomePageEdit);
 
 
 app.use((req, res) => {

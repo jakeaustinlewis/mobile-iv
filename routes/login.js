@@ -31,6 +31,7 @@ knex('users')
     .then(function (result) {
         // The users's password is valid.
         res.send(currentUser);
+        res.render('clientHome', {user: currentUser});
     })
     .catch(function (error) {
         console.error('Create user error:', error);

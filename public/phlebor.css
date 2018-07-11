@@ -391,8 +391,8 @@ main a:before {
 
 #sidebar {
     min-width: 250px;
-    max-width: 250px;
-    min-height: 100vh;
+    /* max-width: 250px; */
+
 }
 
 #sidebar.active {
@@ -449,20 +449,41 @@ a, a:hover, a:focus {
     background: #fff;
     color: #757575;
     transition: all 0.3s;
+    border-right: 1px solid #eaeaea;
+    height: 100%;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+
+}
+
+.profileBackgroundColor {
+    background-color: #15959f;
+    color: white;
+    font-weight: 500;
+    border-bottom: solid 1px #eaeaea;
+}
+
+.profileBorder {
+    border-bottom: solid 1px #eaeaea;
+}
+.profileFontSize {
+    font-size: 18px;
 }
 
 #sidebar .sidebar-header {
-    padding: 20px;
-    background: #fafafa;
-    height: 180px;
-    display: flex;
-    align-items: center;
-    
+    /* background: #fafafa; */
+    background: #fdfdfd;
+    /* height: 300px; */
 }
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #47748b;
+    /* border-bottom: 1px solid #47748b; */
+}
+
+#sidebar ul {
+    border-top: solid 1px #eaeaea;
 }
 
 #sidebar ul p {
@@ -471,15 +492,23 @@ a, a:hover, a:focus {
 }
 
 #sidebar ul li a {
-    padding: 10px;
+    padding: 15px;
     font-size: 1.1em;
     display: block;
 }
 #sidebar ul li a:hover {
-    color: black;
-    background: #dddddd;
+    color: #17252b;
+    background: #dff2f1;
+    border-left: solid #17252b 10px;
     font-weight: 700;
 }
+#sidebar ul li a:active {
+    color: white;
+    background:  #2b7a78;
+    border-left: solid white 10px;
+    font-weight: 700;
+}
+
 
 .fullRightSide {
     height: 100%;
@@ -496,3 +525,8 @@ a, a:hover, a:focus {
     padding-left: 30px !important;
     background: #6d7fcc;
 } */
+
+.imgSizing {
+    height: 150px; 
+    width: 150px;
+}
