@@ -13,6 +13,7 @@ let index = require('./routes/index');
 let newDriver = require('./routes/newDriver');
 let newClient = require('./routes/newClient');
 let login = require('./routes/login');
+let clientHomePage = require('./routes/clientHome');
 
 
 app.set('views', path.join(__dirname, 'views'));
@@ -41,13 +42,13 @@ app.use(bodyParser.urlencoded({
 // }))
 
 app.use(express.static(path.join(__dirname, './public')));
-
 // app.use(express.static('./public'));
+
 app.use(index);
 app.use(newDriver);
 app.use(newClient);
 app.use(login);
-// app.use(drivers);
+app.use(clientHomePage);
 
 
 app.use((req, res) => {

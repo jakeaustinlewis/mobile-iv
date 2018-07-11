@@ -28,6 +28,7 @@ router.post('/newClient', (req, res, next) => {
             return bcrypt.hash(req.body.password, saltRounds);
         }
     })
+    
     .then(function (hash) {
         // now create current user.
         return knex('users')
