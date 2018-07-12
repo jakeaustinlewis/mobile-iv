@@ -43,8 +43,10 @@ router.post('/newDriver', (req, res, next) => {
         .returning(['id', 'first_name', 'last_name', 'phone_number', 'email', 'username', 'userType'])
     })
     .then(function (user) {
-        // YAY, users is created. Pass back to the front end.
-        res.send(user)
+
+        // YAY, users is created. Go to login page
+        res.redirect('/login');
+        // res.send(user)
     })
     .catch(function (error) {
         console.error('Create user error:', error);

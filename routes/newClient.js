@@ -45,7 +45,10 @@ router.post('/newClient', (req, res, next) => {
     })
     .then(function (user) {
         // YAY, users is created. Pass back to the front end.
-        res.send(user)
+        // console.log(user);
+        res.redirect('/login');
+        // res.send(user)
+        
     })
     .catch(function (error) {
         console.error('Create user error:', error);

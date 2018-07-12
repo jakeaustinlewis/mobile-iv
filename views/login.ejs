@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Phlebor Client Login</title>
-    <script defer src="../newClient.js"></script>
+    <script defer src="../login.js"></script>
 
     <!-- Compiled and minified CSS -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"> -->
@@ -67,8 +67,18 @@
 
                             <h3 class="mb-0">Login</h3>
                         </div>
+
+                        <section class="d-flex justify-content-center">
+                            <% if (error !== undefined) {%>
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                                    <%=error%>
+                                </button>
+
+                                <%}%>
+
+                        </section>
                         <div class="card-body">
-                            <form class="formMargin" action="/clientHome" method="POST">
+                            <form class="formMargin" action="/login" method="POST">
 
                                 <div class="form-row justify-content-center">
                                     <div class="form-group col-md-10">

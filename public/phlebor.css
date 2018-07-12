@@ -37,10 +37,11 @@ body {
     height: 100vh;
     min-width: 560px;
     min-height: 540px;
+    z-index: -99;
 }
 
 .background-new-driver {
-    background-image: url("./pictures/maniv.jpg");
+    background-image: url("./pictures/maniv.jpg") !important;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -58,12 +59,12 @@ body {
 }
 
 .pattern-background {
-    background-image: url("./pictures/modernPattern.jpg");
+    background-image: url("./pictures/modernPattern.jpg")!important;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 60px;
+    height: 150px;
     min-width: 560px;
-    min-height: 540px;
+    z-index: 99 !important;
 }
 
 #overlay {
@@ -389,11 +390,6 @@ main a:before {
     align-items: stretch;
 }
 
-#sidebar {
-    min-width: 250px;
-    /* max-width: 250px; */
-
-}
 
 #sidebar.active {
     margin-left: -250px;
@@ -450,7 +446,8 @@ a, a:hover, a:focus {
     color: #757575;
     transition: all 0.3s;
     border-right: 1px solid #eaeaea;
-    height: 100%;
+    min-width: 250px;
+    /* height: 100%; */
     /* display: flex;
     justify-content: center;
     flex-direction: column; */
@@ -484,6 +481,7 @@ a, a:hover, a:focus {
 
 #sidebar ul {
     border-top: solid 1px #eaeaea;
+    height: 100%;
 }
 
 #sidebar ul p {
@@ -502,6 +500,13 @@ a, a:hover, a:focus {
     border-left: solid #17252b 10px;
     font-weight: 700;
 }
+
+.sidebarFontWeight {
+    color: #17252b;
+    border-left: solid #17252b 5px;
+    font-weight: 700;
+}
+
 #sidebar ul li a:active {
     color: white;
     background:  #2b7a78;

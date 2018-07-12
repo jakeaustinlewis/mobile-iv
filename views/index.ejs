@@ -1,79 +1,114 @@
 <% include partials/header %>
 
 
-<body class="backgroud-image">
-    <nav class="navbar navbar-expand-lg navbar-light navBar greenText" style="background-color: white;">
-        <a class="navbar-brand d-flex align-items-center navBarTitle" href="./index">Phlebor
-            <!-- <img src="" width="60" height="60" class="d-inline-block align-top" alt="Phlebor_img"> Phlebor -->
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse full-height" id="navbarNav">
-            <ul class="navbar-nav full-height">
+    <body class="backgroud-image">
+        <nav class="navbar navbar-expand-lg navbar-light navBar greenText" style="background-color: white;">
+            <a class="navbar-brand d-flex align-items-center navBarTitle" href="./index">Phlebor
+                <!-- <img src="" width="60" height="60" class="d-inline-block align-top" alt="Phlebor_img"> Phlebor -->
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse full-height" id="navbarNav">
+                <ul class="navbar-nav full-height d-flex align-items-center">
 
-                <li class="nav-item dropdown full-height">
-                    <a class="nav-link dropdown-toggle navButton full-height d-flex align-items-center" href="#" id="navbarDropdownMenuLink"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Phlebotomist
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="./login">Login</a>
-                        <a class="dropdown-item" href="./newDriver">Sign me up!</a>
-                    </div>
-                </li>
+                    <li class="nav-item dropdown full-height">
+                        <a class="nav-link dropdown-toggle navButton full-height d-flex align-items-center" href="#" id="navbarDropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Phlebotomist
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="./login">Login</a>
+                            <a class="dropdown-item" href="./newDriver">Sign me up!</a>
+                        </div>
+                    </li>
 
-                <li class="nav-item dropdown full-height">
-                    <a class="nav-link dropdown-toggle navButton full-height d-flex align-items-center" href="#" id="navbarDropdownMenuLink"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Client
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="./login">Login</a>
-                        <a class="dropdown-item" href="./newClient">Sign me up!</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
+                    <li class="nav-item dropdown full-height">
+                        <a class="nav-link dropdown-toggle navButton full-height d-flex align-items-center" href="#" id="navbarDropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Client
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="./login">Login</a>
+                            <a class="dropdown-item" href="./newClient">Sign me up!</a>
+                        </div>
+                    </li>
 
-    <main>
-        <section class="body-wrapper">
+                    <li>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                            Launch demo modal
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <main>
+            <section class="body-wrapper">
 
 
-            <section class="body-center white-text">
-                <h1 id="main-title" class="p-2">Phlebor</h1>
-                <h3 class="p-2">Quick, low-cost solution to dehydration</h3>
-                <section class="buttons p-2">
-                    <div>
-                        <a class="btn btn-secondary btn-outline-light" href='#'> Phlebotomist</a>
-                    </div>
+                <section class="body-center white-text">
+                    <h1 id="main-title" class="p-2">Phlebor</h1>
+                    <h3 class="p-2">Quick, low-cost solution to dehydration</h3>
+                    <section class="buttons p-2">
+                        <div>
+                            <a class="btn btn-secondary btn-outline-light" href='#'> Phlebotomist</a>
+                        </div>
 
-                    <div>
-                        <a class="btn btn-secondary btn-outline-light" href='#'> Client</a>
-                    </div>
+                        <div>
+                            <a class="btn btn-secondary btn-outline-light" href='#'> Client</a>
+                        </div>
 
+
+                    </section>
 
                 </section>
 
+
+                <section>
+                    <img src="./pictures/ivanimated.png" class="frontPageCharacter" alt="ivanimated">
+                </section>
+
+
+
+
+
+
+
             </section>
 
 
-            <section>
-                <img src="./pictures/ivanimated.png" class="frontPageCharacter" alt="ivanimated">
-            </section>
+        </main>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+            crossorigin="anonymous"></script>
+    </body>
 
-        </section>
-
-
-    </main>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-        crossorigin="anonymous"></script>
-</body>
-
-</html>
+    </html>

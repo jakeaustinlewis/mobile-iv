@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Personal Website</title>
-    <script defer src="../newClient.js"></script>
+    <!-- <script defer src="../newClient.js"></script> -->
 
     <!-- Compiled and minified CSS -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"> -->
@@ -74,11 +74,11 @@
                             <span>Sign up for IV delivery</span>
                         </h1>
                         <h2 class="d-flex justify-content-center">
-                            <span>Fast, safe help in minutes</span>
+                            <span>Fast, safe relief in minutes</span>
                         </h2>
                         <section class="d-flex justify-content-center">
                             <section class="form-container-login">
-                                <form class="formMargin logInContainer" action="/clientHome" method="POST">
+                                <form class="formMargin logInContainer" action="/newClient" method="POST">
 
 
                                     <div class="form-row justify-content-center">
@@ -94,48 +94,48 @@
 
                                     <div class="form-row justify-content-center">
                                         <div class="form-group col-md-5">
-                                            <label for="inputName"></label>
-                                            <input type="text" class="form-control" name="first_name" id="inputName" placeholder="First name" required>
+                                            <label for="first_name"></label>
+                                            <input type="text" class="form-control" name="first_name" id="inputFirstName" placeholder="First name" required>
                                         </div>
                                         <div class="form-group col-md-5">
-                                            <label for="inputAge"></label>
-                                            <input type="text" class="form-control" name="last_name" id="inputAge" placeholder="Last Name" required>
+                                            <label for="last_name"></label>
+                                            <input type="text" class="form-control" name="last_name" id="inputLastName" placeholder="Last Name" required>
                                         </div>
                                     </div>
 
                                     <div class="form-row justify-content-center">
                                         <div class="form-group col-md-10">
-                                            <label for="inputCodeNames"></label>
-                                            <input type="tel" class="form-control" name="phone_number" id="inputCodeNames" placeholder="Phone Number" required>
+                                            <label for="phone_number"></label>
+                                            <input type="tel" class="form-control" name="phone_number" id="inputPhoneNumber" placeholder="Phone Number" required>
                                         </div>
 
+                                    </div>
+
+                                    <div class="form-row justify-content-center">
+                                        <div class="form-group col-md-10">
+                                            <label for="email"></label>
+                                            <input type="email" class="form-control" name="email" id="inputEmail" placeholder="Email" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row justify-content-center">
+                                        <div class="form-group col-md-10">
+                                            <label for="username"></label>
+                                            <input type="text" class="form-control" name="username" id="inputUsername" placeholder="Username" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row justify-content-center">
+                                        <div class="form-group col-md-10">
+                                            <label for="password"></label>
+                                            <input type="password" class="form-control" name="password" id="inputPassword" placeholder="Password" required>
+                                        </div>
                                     </div>
 
                                     <div class="form-row justify-content-center">
                                         <div class="form-group col-md-10">
                                             <label for="inputPrice"></label>
-                                            <input type="email" class="form-control" name="email" id="inputPrice" placeholder="Email" required>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-row justify-content-center">
-                                        <div class="form-group col-md-10">
-                                            <label for="inputPrice"></label>
-                                            <input type="text" class="form-control" name="username" id="inputPrice" placeholder="Username" required>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-row justify-content-center">
-                                        <div class="form-group col-md-10">
-                                            <label for="inputPrice"></label>
-                                            <input type="password" class="form-control" name="password" id="inputPrice" placeholder="Password" required>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-row justify-content-center">
-                                        <div class="form-group col-md-10">
-                                            <label for="inputPrice"></label>
-                                            <input type="password" class="form-control" name="vpassword" id="inputPrice" placeholder="Verify Password" required>
+                                            <input type="password" class="form-control" name="vpassword" id="inputVPassword" placeholder="Verify Password" required>
                                         </div>
                                     </div>
 

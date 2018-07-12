@@ -5,9 +5,13 @@ let path = require('path');
 let app = express();
 let port = process.env.PORT || 8000;
 let methodOverride = require('method-override');
+const cookieParser = require('cookie-parser');
+
 
 let morgan = require('morgan'); //Morgan is used for logging request details.
 let bodyParser = require('body-parser');
+const session = require('express-session');
+const FileStore = require('session-file-store')(session); 
 
 let index = require('./routes/index');
 let newDriver = require('./routes/newDriver');
@@ -24,6 +28,7 @@ app.disable('x-powered-by'); //Sets the Boolean setting name to false
 // app.use(express.static('public'));
 
 app.use(methodOverride('_method'));
+app.use(cookieParser());
 
 app.use(function (req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
@@ -42,8 +47,15 @@ app.use(bodyParser.urlencoded({
 //     return method
 // }))
 
-app.use(express.static(path.join(__dirname, './public')));
+app.use(express.static(path.join(__dirname, 'public')));
 // app.use(express.static('./public'));
+app.use(session({
+    store: new FileStore,
+    name: 'server-session-cookie-id',
+    secret: 'keyboard cat',
+    resave: true,
+    saveUninitialized: true
+}));
 
 app.use(index);
 app.use(newDriver);

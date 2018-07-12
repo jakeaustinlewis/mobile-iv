@@ -32,7 +32,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse full-height" id="navbarNav">
-            <ul class="navbar-nav full-height ml-auto navTitleMarginright">
+            <ul class="navbar-nav full-height ml-auto navTitleMarginright ">
 
                 <li class="nav-item dropdown full-height ml-auto">
                     <a class="nav-link dropdown-toggle homeNavButton full-height d-flex align-items-center" href="#" id="navbarDropdownMenuLink"
@@ -42,7 +42,7 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="#">Request a Phlebor</a>
                         <a class="dropdown-item" href="#">Past Requests</a>
-                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="/clientHome">Profile</a>
                         <a class="dropdown-item" href="#">Payment</a>
                         <a class="dropdown-item" href="./index">Log Out</a>
                     </div>
@@ -82,7 +82,7 @@
                         </li>
 
                         <li>
-                            <a href="#" class="d-flex align-items-center">
+                            <a href="/clientHome" class="d-flex align-items-center sidebarFontWeight">
                                 <i class="fas fa-user mr-2"></i>
                                 Profile</a>
                         </li>
@@ -94,7 +94,7 @@
                         </li>
 
                         <li>
-                            <a href="./index" class="d-flex align-items-center">
+                            <a id="clientHomeLogOutButton" href="./index" class="d-flex align-items-center">
                                 <i class="fas fa-sign-out-alt mr-2"></i>
                                 Log Out</a>
                         </li>
@@ -118,18 +118,26 @@
                     <div class="row d-flex justify-content-center profileBackgroundColor mx-0">
                         <h1>Profile</h1>
 
+
+
                     </div>
                     <section class="profileFontSize ">
                         <div class="row mx-0 p-4 profileBorder">
                             <div class="col-2">
                                 <b> Name </b>
                             </div>
-                            <div class="col-2"> Ed </div>
-                            <div class="col-2"> Pantzar</div>
+                            <div class="col-2">
+                                <%= user.first_name%>
+                            </div>
+                            <div class="col-2">
+                                <%= user.last_name%>
+                            </div>
                             <div class="col-2">
                                 <b>Email</b>
                             </div>
-                            <div class="col-2"> Ed@EddyAndTheJets.com</div>
+                            <div class="col-2">
+                                <%= user.email%>
+                            </div>
 
                         </div>
                         <div class="row mx-0 p-4 d-flex align-items-center profileBorder">
@@ -141,18 +149,18 @@
                             <div class="col-2">
                                 <b>Phone Number</b>
                             </div>
-                            <div class="col"> (555) 555-5555</div>
+                            <div class="col"> <%= user.phone_number%></div>
 
                         </div>
                         <div class="row mx-0 px-4 py-5 profileBorder">
                             <div class="col-2">
                                 <b>Username</b>
                             </div>
-                            <div class="col-4"> DontCallMeFrEddy</div>
+                            <div class="col-4"> <%= user.username%></div>
                             <div class="col-2">
                                 <b> Age</b>
                             </div>
-                            <div class="col-2"> 39</div>
+                            <div class="col-2"> Under Construction </div>
                         </div>
 
                     </section>

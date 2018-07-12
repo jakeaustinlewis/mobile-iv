@@ -21,6 +21,7 @@
     "bcrypt": "^3.0.0",
     "body-parser": "^1.18.3",
     "config": "^1.30.0",
+    "cookie-parser": "^1.4.3",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
     "express-session": "^1.15.6",
@@ -29,7 +30,8 @@
     "knex": "^0.15.0",
     "method-override": "^2.3.10",
     "morgan": "^1.9.0",
-    "pg": "^7.4.3"
+    "pg": "^7.4.3",
+    "session-file-store": "^1.2.0"
   },
   "devDependencies": {
     "nodemon": "^1.17.5"
