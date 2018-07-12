@@ -41,7 +41,7 @@ body {
 }
 
 .background-new-driver {
-    background-image: url("./pictures/maniv.jpg") !important;
+    /* background-image: url("./pictures/maniv.jpg") !important; */
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -59,7 +59,7 @@ body {
 }
 
 .pattern-background {
-    background-image: url("./pictures/modernPattern.jpg")!important;
+    /* background-image: url("./pictures/modernPattern.jpg")!important; */
     background-size: cover;
     background-repeat: no-repeat;
     height: 150px;
