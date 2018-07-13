@@ -66,7 +66,7 @@ body {
 .pattern-background {
     background-image: url("./pictures/modernPattern.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     height: 150px;
     min-width: 560px;
     z-index: 99;
