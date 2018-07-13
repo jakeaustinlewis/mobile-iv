@@ -2,7 +2,7 @@
 # mobile-iv
 
 # A project description
-For the Q2 Project, it brings me great joy to propose an idea that will provide a quick and painless service to ameliorate the adverse effects of dehydration to those in need. Hydradro.io, a mobile friendly and web application, allows users to request an intravenous therapy service delivered right to their location, no matter how absurd. 
+For the Q2 Project, it brings me great joy to propose an idea that will provide a quick and painless service to remedy the adverse effects of dehydration to those in need. Phlebor, a mobile friendly and web application, allows users to request an intravenous therapy service delivered right to their location, no matter how absurd. 
 
 
 # Who uses it?
@@ -33,11 +33,12 @@ Name
 Date of birth
 Email
 Location
+Cell Phone Number
+
+# What I plan to have
 Billing address
 Credit Card Information
 Medical Waivers
-Cell Phone Number
-
 
 
 # A list of nice to have features
