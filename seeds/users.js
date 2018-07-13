@@ -19,7 +19,7 @@ exports.seed = function (knex, Promise) {
   //Promise all to delete everything from BOTH the dogs and breeds table at the SAME time.
   // When both actions are done, out .then is triggered.
   return knex.migrate.rollback()
-    // return Promise.all([knex('assassins').del()])
+    // return Promise.all([knex('users').del()])
     .then(function () {
       console.log('Both deletions are complete.');
       return knex.migrate.latest();

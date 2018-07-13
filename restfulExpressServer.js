@@ -14,6 +14,7 @@ let bodyParser = require('body-parser');
 const session = require('express-session');
 const FileStore = require('session-file-store')(session); 
 
+
 let index = require('./routes/');
 let newDriver = require('./routes/newDriver');
 let newClient = require('./routes/newClient');
@@ -25,8 +26,10 @@ let clientHomePageEdit = require('./routes/clientHomeEdit');
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
+
 app.disable('x-powered-by'); //Sets the Boolean setting name to false
 // app.use(express.static('public'));
+
 
 app.use(methodOverride('_method'));
 app.use(cookieParser());
