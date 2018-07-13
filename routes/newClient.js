@@ -8,7 +8,6 @@ const bcrypt = require('bcrypt');
 const saltRounds = 10;
 
 
-
 router.get('/newClient', (req, res) => {
     res.render('newClient', {title: 'New Client'});
 });
