@@ -14,7 +14,7 @@ let bodyParser = require('body-parser');
 const session = require('express-session');
 const FileStore = require('session-file-store')(session); 
 
-let index = require('./routes/index');
+let index = require('./routes/');
 let newDriver = require('./routes/newDriver');
 let newClient = require('./routes/newClient');
 let login = require('./routes/login');
@@ -48,8 +48,8 @@ app.use(bodyParser.urlencoded({
 //     return method
 // }))
 
-// app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static('./public'));
+app.use(express.static(path.join(__dirname, 'public')));
+// app.use(express.static('./public'));
 app.use(session({
     store: new FileStore,
     name: 'server-session-cookie-id',
