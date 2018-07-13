@@ -47,8 +47,8 @@ app.use(bodyParser.urlencoded({
 //     return method
 // }))
 
-app.use(express.static(path.join(__dirname, 'public')));
-// app.use(express.static('./public'));
+// app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static('./public'));
 app.use(session({
     store: new FileStore,
     name: 'server-session-cookie-id',

@@ -4,10 +4,10 @@ const router = express.Router();
 const knex = require('../knex');
 // const bcrypt = require('bcrypt-as-promised');
 
-var bcrypt = require('bcrypt');
+const bcrypt = require('bcrypt');
 const saltRounds = 10;
-const myPlaintextPassword = 's0/\/\P4$$w0rD';
-const someOtherPlaintextPassword = 'not_bacon';
+
+
 
 router.get('/newClient', (req, res) => {
     res.render('newClient', {title: 'New Client'});
