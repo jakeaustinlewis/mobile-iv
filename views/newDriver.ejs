@@ -21,58 +21,23 @@
 
 
 <body class="">
-    <nav class="navbar navbar-expand-lg navbar-light navBar greenText" style="background-color: white;">
-        <a class="navbar-brand d-flex align-items-center navBarTitle" href="./">Phlebor
-            <!-- <img src="" width="60" height="60" class="d-inline-block align-top" alt="Phlebor_img"> Phlebor -->
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse full-height" id="navbarNav">
-            <ul class="navbar-nav full-height">
+    <% include partials/navBar %>
 
-                <li class="nav-item dropdown full-height">
-                    <a class="nav-link dropdown-toggle navButton full-height d-flex align-items-center" href="#" id="navbarDropdownMenuLink"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Phlebotomist
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="./login">Login</a>
-                        <a class="dropdown-item" href="./newDriver">Sign me up!</a>
-                    </div>
-                </li>
-
-                <li class="nav-item dropdown full-height">
-                    <a class="nav-link dropdown-toggle navButton full-height d-flex align-items-center" href="#" id="navbarDropdownMenuLink"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Client
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="./login">Login</a>
-                        <a class="dropdown-item" href="./newClient">Sign me up!</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <main>
-        <section class="background-new-driver">
-            <section id="overlay" class="">
-                <!-- <section>
+        <main>
+            <section class="background-new-driver">
+                <section id="overlay" class="">
+                    <!-- <section>
             <h1>Sign up to deliver and conduct intravenous therapy!</h1>
             <h2>Help those in need with but a click of a mouse</h2>
         </section> -->
 
+                    <!-- <div class="form-row justify-content-center"></div> -->
 
-                <!-- <div class="form-row justify-content-center"></div> -->
 
+                    <section class="form-container d-flex justify-content-start">
+                        <section class="signInBackgroundContainer formMargin">
+                            <form class="formMargin" action="/newDriver" method="POST">
 
-                <section class="form-container d-flex justify-content-start">
-                    <section class="signInBackgroundContainer formMargin">
-                        <form class="formMargin" action="/newDriver" method="POST">
-                     
                                 <div class="form-row justify-content-center">
                                     <div class="form-group col-md-10 form-actions">
                                         <a role="button" class="btn btn-dark justify-content-center" href='./login'>Already an existing member?</a>
@@ -113,7 +78,7 @@
                                 <div class="form-row justify-content-center">
                                     <div class="form-group col-md-10">
                                         <label for="username"></label>
-                                        <input type="text" class="form-control" name="username" id="InputUsername"  placeholder="Username" required>
+                                        <input type="text" class="form-control" name="username" id="InputUsername" placeholder="Username" required>
                                     </div>
                                 </div>
 
@@ -136,21 +101,21 @@
                                         <button type="submit" class="btn btn-primary">Submit!</button>
                                     </div>
                                 </div>
-                  
-                        </form>
+
+                            </form>
+                        </section>
                     </section>
                 </section>
             </section>
-        </section>
 
 
-    </main>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-        crossorigin="anonymous"></script>
+        </main>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>

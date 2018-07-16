@@ -57,8 +57,8 @@ app.use(session({
     store: new FileStore,
     name: 'server-session-cookie-id',
     secret: 'keyboard cat',
-    resave: true,
-    saveUninitialized: true
+    resave: false,
+    saveUninitialized: false
 }));
 
 app.use(index);

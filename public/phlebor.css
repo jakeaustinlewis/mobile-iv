@@ -28,6 +28,7 @@ body {
     height: 100vh;
     min-width: 560px;
     min-height: 540px;
+    /* margin-top: -55px; */
 }
 
 .background-new-client {
@@ -120,9 +121,114 @@ main {
 }
 
 .frontPageCharacter {
-    width: 500px;
-    height: 500px;
+    width: 194.67px;
+    height: 275px;
 }
+.frontPageFlex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+}
+
+@media (min-width: 768px) {
+    .frontPageCharacter {
+        width: 247.625px;
+        height: 350px;
+    }
+    .frontPageFlex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+    }
+}
+
+@media (min-width: 1024px) {
+    .frontPageCharacter {
+        width: 318.375px;
+        height: 450px;
+    }
+
+    .frontPageFlex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (min-width: 992px) {
+    .frontPageFlex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+    }
+}
+.navbar-fixed-top {
+    top: -70px; /* you'll have to figure out the exact number here */
+  }
+  
+  .navbar-fixed-top, .navbar-fixed-bottom {
+    position: relative; /* this can also be static */
+  }
+
+/* 
+
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  } */
+
+
+
+
+
 
 /* .body-center {
 
@@ -145,8 +251,8 @@ main {
 
 .navBar {
     border-bottom: #17252b 1px solid;
-    height: 70px;
-    padding: 0px;
+    /* height: 70px; */
+    /* padding: 0px; */
 }
 
 .navTitleMarginLeft {
@@ -177,13 +283,13 @@ main {
     color: #3bafa9;
 }
 
-a.navbar-brand {
+/* a.navbar-brand {
     height: 100%;
-}
+} */
 
-.navbar-brand a {
+/* .navbar-brand a {
     height: 100%;
-}
+} */
 
 .navBarTitle {
     font-size: 40px;
@@ -201,7 +307,7 @@ a.navbar-brand {
     font-size: 40px;
     padding: 0px;
     margin-left: 10px;
-} */
+}  */
 
 .nav.navbar-nav.navbar-right li a {
     color: #17252b;
@@ -211,12 +317,12 @@ a.navbar-brand {
     color: rgba(23, 37, 43, .5);
 }
 
-.navbar-dark .navbar-nav .nav-link {
+.navbar-dark:hover .navbar-nav:hover .nav-link:hover {
     color: white;
 }
 
 .navButton {
-    height: 100%;
+    /* height: 100%; */
     position: relative;
     color: #17252b;
     text-decoration: none;
@@ -245,7 +351,7 @@ a.navbar-brand {
 }
 
 .homeNavButton {
-    height: 100%;
+    /* height: 100%; */
     position: relative;
     color: white;
     text-decoration: none;
@@ -313,6 +419,19 @@ main a:before {
 #main-title {
     font-size: 120px;
     font: "Helvetica Neue";
+}
+
+@media only screen and (max-width: 1023px) {
+    #main-title {
+        font-size: 100px;
+        font: "Helvetica Neue";
+    }
+}
+@media only screen and (max-width: 767px) {
+    #main-title {
+        font-size: 80px;
+        font: "Helvetica Neue";
+    }
 }
 
 .bodySpacing {
@@ -384,18 +503,15 @@ main a:before {
     align-items: center;
 }
 
-
-
 .wrapper {
     display: flex;
- 
     align-items: stretch;
 }
-
 
 #sidebar.active {
     margin-left: -250px;
 }
+
 a[data-toggle="collapse"] {
     position: relative;
 }
@@ -407,6 +523,7 @@ a[data-toggle="collapse"] {
     right: 20px;
     transform: translateY(-50%);
 } */
+
 @media (max-width: 768px) {
     #sidebar {
         margin-left: -250px;
@@ -415,12 +532,6 @@ a[data-toggle="collapse"] {
         margin-left: 0;
     }
 }
-
-
-
-
-
-
 
 /* body {
     font-family: 'Poppins', sans-serif;
@@ -435,7 +546,9 @@ p {
     color: #999;
 }
 
-a, a:hover, a:focus {
+a,
+a:hover,
+a:focus {
     color: inherit;
     text-decoration: none;
     transition: all 0.3s;
@@ -443,7 +556,6 @@ a, a:hover, a:focus {
 
 #sidebar {
     /* don't forget to add all the previously mentioned styles here too */
-   
     background: #fff;
     color: #757575;
     transition: all 0.3s;
@@ -453,7 +565,6 @@ a, a:hover, a:focus {
     /* display: flex;
     justify-content: center;
     flex-direction: column; */
-
 }
 
 .profileBackgroundColor {
@@ -466,6 +577,7 @@ a, a:hover, a:focus {
 .profileBorder {
     border-bottom: solid 1px #eaeaea;
 }
+
 .profileFontSize {
     font-size: 18px;
 }
@@ -496,6 +608,7 @@ a, a:hover, a:focus {
     font-size: 1.1em;
     display: block;
 }
+
 #sidebar ul li a:hover {
     color: #17252b;
     background: #dff2f1;
@@ -511,11 +624,10 @@ a, a:hover, a:focus {
 
 #sidebar ul li a:active {
     color: white;
-    background:  #2b7a78;
+    background: #2b7a78;
     border-left: solid white 10px;
     font-weight: 700;
 }
-
 
 .fullRightSide {
     height: 100%;
@@ -527,6 +639,7 @@ a, a:hover, a:focus {
     color: #fff;
     background: #6d7fcc;
 } */
+
 /* ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
@@ -534,6 +647,6 @@ a, a:hover, a:focus {
 } */
 
 .imgSizing {
-    height: 150px; 
+    height: 150px;
     width: 150px;
 }

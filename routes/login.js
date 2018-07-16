@@ -7,9 +7,12 @@ const bcrypt = require('bcrypt');
 
 
 router.get('/login', (req, res) => {
+    console.log(typeof(req.session.loginError));
+    console.log(req.session.loginError);
     res.render('login', {
         title: 'Login Page', error: req.session.loginError
     });
+
 });
 
 

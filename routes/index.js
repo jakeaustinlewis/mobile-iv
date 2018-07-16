@@ -8,6 +8,10 @@ const knex = require('../knex');
 
 router.get('/', (req, res) => {
     req.session = null;
+    // req.session.loginError=null;
+    // console.log(req.session.loginError);
+    // console.log(typeof(req.session.loginError));
+
     res.render('index', {title: 'Home Page'});
     // console.log('Cookie: ', cookieParser.signedCookies(cookies, 'keyboard cat'));
 
