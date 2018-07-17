@@ -124,6 +124,7 @@ main {
     width: 194.67px;
     height: 275px;
 }
+
 .frontPageFlex {
     display: flex;
     justify-content: center;
@@ -163,13 +164,13 @@ main {
         width: 318.375px;
         height: 450px;
     }
-
     .frontPageFlex {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 }
+
 @media (min-width: 992px) {
     .frontPageFlex {
         display: flex;
@@ -178,13 +179,17 @@ main {
         flex-wrap: wrap-reverse;
     }
 }
+
 .navbar-fixed-top {
-    top: -70px; /* you'll have to figure out the exact number here */
-  }
-  
-  .navbar-fixed-top, .navbar-fixed-bottom {
-    position: relative; /* this can also be static */
-  }
+    top: -70px;
+    /* you'll have to figure out the exact number here */
+}
+
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+    position: relative;
+    /* this can also be static */
+}
 
 /* 
 
@@ -239,11 +244,6 @@ main {
       text-align: left;
     }
   } */
-
-
-
-
-
 
 /* .body-center {
 
@@ -309,7 +309,6 @@ main {
 .navBarTitle {
     font-size: 40px;
     padding: 0px;
-    margin-left: 10px;
 }
 
 .navBarTitleClientHome {
@@ -442,6 +441,7 @@ main a:before {
         font: "Helvetica Neue";
     }
 }
+
 @media only screen and (max-width: 767px) {
     #main-title {
         font-size: 80px;
@@ -467,7 +467,6 @@ main a:before {
     width: 350px;
     background-color: #F1F1F1;
 }
-
 
 .form-container-login {
     position: relative;
@@ -550,6 +549,7 @@ a[data-toggle="collapse"] {
         margin-left: 0;
     }
 }
+
 /* body {
     font-family: 'Poppins', sans-serif;
     background: #fafafa;
@@ -672,3 +672,28 @@ a:focus {
     height: 150px;
     width: 150px;
 }
+
+.img-circular {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    object-fit: cover;
+}
+
+/* #crop-the-cats {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+#crop-the-cats img {
+    position: absolute;
+    top: 50%;
+    left: 50%x;
+} */
