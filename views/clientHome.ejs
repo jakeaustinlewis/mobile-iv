@@ -23,7 +23,7 @@
 </head>
 
 <body class="">
-    <nav class="navbar navbar-expand-lg navbar-dark navBar greenText" style="background-color: #123146;">
+    <nav class="navbar navbar-expand-lg navbar-dark greenText navBackgroundColor">
         <a class="navbar-brand d-flex align-items-center navBarTitle ml-2" href="./">Phlebor
             <!-- <img src="" width="60" height="60" class="d-inline-block align-top" alt="Phlebor_img"> Phlebor -->
         </a>
@@ -83,10 +83,10 @@
                 <div class="d-flex">
 
                     <nav id="sidebar" class="col-3 px-0 d-flex flex-column">
-                        <div class="sidebar-header d-flex align-items-center p-3">
+                        <div class="sidebar-header d-flex align-items-center justify-content-center p-3">
                             <!-- <h3>Bootstrap Sidebar</h3> -->
                             <!-- <section class="img-cirlce"> -->
-                            <img src="../pictures/edathisfinest.jpg" class="img img-fluid rounded-circle">
+                            <img src="../pictures/edathisfinest.jpg" class="imgSizing">
                             <!-- </section> -->
                         </div>
 
@@ -138,13 +138,16 @@
                             </div>
                         </div>
 
-                        <div class="d-flex align-items-center justify-content-center d-md-none" style="background-color:#0ccbe5; height: 40%;">
-                            <section>
+                        <div class="d-flex align-items-center justify-content-center d-md-none flex-column" style="background-color:#0ccbe5; height: 40%;">
+                            <!-- <section> -->
                                 <img id="crop-the-cats" src="../pictures/edathisfinest.jpg" class="img-circular">
 
-                                <%= user.first_name%> 
-                                <%= user.last_name%>
-                            </section>
+                                <div>
+                                    <%= user.first_name%>
+                                    <%= user.last_name%>
+                                </div>
+
+                            <!-- </section> -->
                         </div>
 
 
@@ -172,7 +175,7 @@
                                 <div class="col-2">
                                     <b>Profile Picture</b>
                                 </div>
-                                <img src="../pictures/edathisfinest.jpg" class="imgSizing img-fluid col-3">
+                                <img src="../pictures/edathisfinest.jpg" class="imgSizing">
                                 <div class="col-1"> </div>
                                 <div class="col-2">
                                     <b>Phone Number</b>

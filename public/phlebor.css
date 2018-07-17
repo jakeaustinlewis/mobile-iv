@@ -139,6 +139,11 @@ main {
     display: table-row;
 }
 
+.navBackgroundColor {
+    background-color: #0ccbe5;
+    border-bottom: none;
+}
+
 @media (min-width: 768px) {
     .frontPageCharacter {
         width: 247.625px;
@@ -156,6 +161,9 @@ main {
         margin: 0px auto 0px auto;
         height: 100%;
         display: table-row;
+    }
+    .navBackgroundColor {
+        background-color: #123146;
     }
 }
 
@@ -264,7 +272,7 @@ main {
     float: none;
 }
 
-.navBar {
+.navBarBorder {
     border-bottom: #17252b 1px solid;
     /* height: 70px; */
     /* padding: 0px; */
@@ -669,8 +677,15 @@ a:focus {
 } */
 
 .imgSizing {
-    height: 150px;
     width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    object-fit: cover;
 }
 
 .img-circular {
