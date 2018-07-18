@@ -37,18 +37,9 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    min-width: 560px;
+    /* min-width: 560px; */
     min-height: 540px;
     z-index: -1;
-}
-
-.background-new-driver {
-    background-image: url("./pictures/maniv.jpg") !important;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    min-width: 360px;
-    min-height: 540px;
 }
 
 .maxHeight {
@@ -69,22 +60,8 @@ body {
     background-size: cover;
     background-repeat: repeat;
     height: 150px;
-    min-width: 560px;
+    min-width: 300px;
     z-index: 99;
-}
-
-#overlay {
-    /* position: fixed; Sit on top of the page content */
-    display: none;
-    /* Hidden by default */
-    width: 100%;
-    /* Full width (cover the whole page) */
-    height: 100%;
-    /* Full height (cover the whole page) */
-    background-color: rgba(0, 0, 0, 0.8);
-    /* Black background with opacity */
-    z-index: 2;
-    /* Specify a stack order in case you're using a different order for other elements */
 }
 
 main {
@@ -97,14 +74,6 @@ main {
     min-height: 540px; */
 }
 
-.body-container {
-    position: relative;
-    width: 80%;
-    margin: 0px auto 0px auto;
-    box-sizing: border-box;
-    /* height: 100vh; */
-    height: 100%;
-}
 
 .negativeMargin {
     margin-top: -75px;
@@ -143,6 +112,40 @@ main {
     background-color: #0ccbe5;
     border-bottom: none;
 }
+.profileFontSize {
+    font-size: 24px;
+}
+.body-container {
+    position: relative;
+    width: 90%;
+    margin: 0px auto 0px auto;
+    box-sizing: border-box;
+    /* height: 100vh; */
+    height: 100%;
+}
+.background-new-driver {
+    background-color: #F1F1F1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    /* min-width: 560px; */
+    min-height: 540px;
+    z-index: -1;
+}
+#overlay {
+    /* position: fixed; Sit on top of the page content */
+    display: none;
+    /* Hidden by default */
+    width: 100%;
+    /* Full width (cover the whole page) */
+    height: 100%;
+    /* Full height (cover the whole page) */
+    background-color: rgba(0, 0, 0, 0.0);
+    /* Black background with opacity */
+    z-index: 2;
+    /* Specify a stack order in case you're using a different order for other elements */
+}
+
 
 @media (min-width: 768px) {
     .frontPageCharacter {
@@ -165,6 +168,38 @@ main {
     .navBackgroundColor {
         background-color: #123146;
     }
+    .profileFontSize {
+        font-size: 18px;
+    }
+    .body-container {
+        position: relative;
+        width: 80%;
+        margin: 0px auto 0px auto;
+        box-sizing: border-box;
+        /* height: 100vh; */
+        height: 100%;
+    }
+    .background-new-driver {
+        background-image: url("./pictures/maniv.jpg") !important;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        min-height: 540px;
+    }
+    #overlay {
+        /* position: fixed; Sit on top of the page content */
+        display: none;
+        /* Hidden by default */
+        width: 100%;
+        /* Full width (cover the whole page) */
+        height: 100%;
+        /* Full height (cover the whole page) */
+        background-color: rgba(0, 0, 0, 0.8);
+        /* Black background with opacity */
+        z-index: 2;
+        /* Specify a stack order in case you're using a different order for other elements */
+    }
+    
 }
 
 @media (min-width: 1024px) {
@@ -608,9 +643,6 @@ a:focus {
     border-bottom: solid 1px #eaeaea;
 }
 
-.profileFontSize {
-    font-size: 18px;
-}
 
 #sidebar .sidebar-header {
     /* background: #fafafa; */

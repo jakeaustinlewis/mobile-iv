@@ -82,7 +82,7 @@
                 <!-- <div class="row"> -->
                 <div class="d-flex">
 
-                    <nav id="sidebar" class="col-3 px-0 d-flex flex-column">
+                    <nav id="sidebar" class="d-none col-md-3 px-md-0 d-md-flex flex-md-column">
                         <div class="sidebar-header d-flex align-items-center justify-content-center p-3">
                             <!-- <h3>Bootstrap Sidebar</h3> -->
                             <!-- <section class="img-cirlce"> -->
@@ -94,7 +94,7 @@
 
                             <li>
                                 <a href="#" class="d-flex align-items-center">
-                                    <i class="fas fa-user-md mr-2"></i>
+                                    <i class="fas fa-user mr-2"></i>
                                     Request a Phlebor</a>
                             </li>
 
@@ -138,79 +138,124 @@
                             </div>
                         </div>
 
-                        <div class="d-flex align-items-center justify-content-center d-md-none flex-column" style="background-color:#0ccbe5; height: 40%;">
-                            <!-- <section> -->
-                                <img id="crop-the-cats" src="../pictures/edathisfinest.jpg" class="img-circular">
-
-                                <div>
-                                    <%= user.first_name%>
-                                    <%= user.last_name%>
+                        <section class="d-none d-md-block">
+                            <section class="profileFontSize ">
+                                <div class="row mx-0 p-4 profileBorder">
+                                    <div class="col-2">
+                                        <b> Name </b>
+                                    </div>
+                                    <div class="col-2">
+                                        <%= user.first_name%>
+                                    </div>
+                                    <div class="col-2">
+                                        <%= user.last_name%>
+                                    </div>
+                                    <div class="col-2">
+                                        <b>Email</b>
+                                    </div>
+                                    <div class="col-2">
+                                        <%= user.email%>
+                                    </div>
                                 </div>
 
-                            <!-- </section> -->
-                        </div>
-
-
-
-                        <section class="profileFontSize ">
-                            <div class="row mx-0 p-4 profileBorder">
-                                <div class="col-2">
-                                    <b> Name </b>
-                                </div>
-                                <div class="col-2">
-                                    <%= user.first_name%>
-                                </div>
-                                <div class="col-2">
-                                    <%= user.last_name%>
-                                </div>
-                                <div class="col-2">
-                                    <b>Email</b>
-                                </div>
-                                <div class="col-2">
-                                    <%= user.email%>
+                                <div class="row mx-0 p-4 d-flex align-items-center profileBorder">
+                                    <div class="col-2">
+                                        <b>Profile Picture</b>
+                                    </div>
+                                    <img src="../pictures/edathisfinest.jpg" class="imgSizing">
+                                    <div class="col-1"> </div>
+                                    <div class="col-2">
+                                        <b>Phone Number</b>
+                                    </div>
+                                    <div class="col">
+                                        <%= user.phone_number%>
+                                    </div>
                                 </div>
 
+                                <div class="row mx-0 px-4 py-5 profileBorder">
+                                    <div class="col-2">
+                                        <b>Username</b>
+                                    </div>
+                                    <div class="col-4">
+                                        <%= user.username%>
+                                    </div>
+                                    <div class="col-2">
+                                        <b> Age</b>
+                                    </div>
+                                    <div class="col-2"> Under Construction </div>
+                                </div>
+
+                            </section>
+
+                            <div class="row mx-0 p-4 profileBorder d-flex justify-content-center">
+                                <a class="btn btn-primary" href="clientHomeEdit" role="Edit">Edit Profile Information</a>
                             </div>
-                            <div class="row mx-0 p-4 d-flex align-items-center profileBorder">
-                                <div class="col-2">
-                                    <b>Profile Picture</b>
-                                </div>
-                                <img src="../pictures/edathisfinest.jpg" class="imgSizing">
-                                <div class="col-1"> </div>
-                                <div class="col-2">
-                                    <b>Phone Number</b>
-                                </div>
-                                <div class="col">
-                                    <%= user.phone_number%>
-                                </div>
-
-                            </div>
-                            <div class="row mx-0 px-4 py-5 profileBorder">
-                                <div class="col-2">
-                                    <b>Username</b>
-                                </div>
-                                <div class="col-4">
-                                    <%= user.username%>
-                                </div>
-                                <div class="col-2">
-                                    <b> Age</b>
-                                </div>
-                                <div class="col-2"> Under Construction </div>
-                            </div>
-
                         </section>
 
-                        <div class="row mx-0 p-4 profileBorder d-flex justify-content-center">
-                            <a class="btn btn-primary" href="clientHomeEdit" role="Edit">Edit Profile Information</a>
+
+                        <!-- Mobile View -->
+                        <div class="d-flex align-items-center justify-content-center d-md-none flex-column" style="background-color:#0ccbe5; height: 40%;">
+                            <img id="crop-the-cats" src="../pictures/edathisfinest.jpg" class="img-circular">
+
+                            <div>
+                                <%=user.first_name%>
+                                    <%=user.last_name%>
+                            </div>
+
+
                         </div>
 
+                        <section class="d-block d-md-none">
+                            <section class="profileFontSize">
+                                <div class="row mx-0 p-4 d-flex justify-content-center">
+                                    <section>
+                                        <div class="my-3 d-flex align-items-center">
+                                            <i class="fas fa-user mr-2" style="font-size: 1.1em; color: #0ccbe5;">
+
+                                            </i>
+                                            <p class="m-0">
+                                                <%= user.username%>
+                                            </p>
+                                        </div>
+
+                                        <div class="my-3 d-flex align-items-center">
+                                            <i class="fas fa-envelope mr-2 d-inline" style="font-size: 1.1em; color: #0ccbe5;">
+
+                                            </i>
+                                            <p class="m-0">
+                                                <%= user.email%>
+                                            </p>
+                                        </div>
+
+
+                                        <div class="my-3 d-flex align-items-center">
+                                            <i class="fas fa-mobile mr-2" style="font-size: 1.1em; color: #0ccbe5;">
+
+                                            </i>
+                                            <p class="m-0">
+                                                <%= user.phone_number%>
+                                            </p>
+                                        </div>
+
+                                    </section>
+
+                            </section>
+
+                            <div class="row mx-0 p-4 profileBorder d-flex justify-content-center">
+                                <a class="btn btn-primary" href="clientHomeEdit" role="Edit">Edit Profile Information</a>
+                            </div>
+                        </section>
+
+
+
+
+                        </div>
                     </div>
                 </div>
+
+
+
             </div>
-
-
-
-        </div>
 
 
 

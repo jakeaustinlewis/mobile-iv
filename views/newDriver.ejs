@@ -24,89 +24,92 @@
     <% include partials/navBar %>
 
         <main>
+            <!-- <section class="background-new-client d-md-none"> -->
             <section class="background-new-driver">
-                <section id="overlay" class="">
-                    <!-- <section>
+            
+                    <section id="overlay" class="">
+                        <!-- <section>
             <h1>Sign up to deliver and conduct intravenous therapy!</h1>
             <h2>Help those in need with but a click of a mouse</h2>
         </section> -->
 
-                    <!-- <div class="form-row justify-content-center"></div> -->
+                        <!-- <div class="form-row justify-content-center"></div> -->
 
 
-                    <section class="form-container d-flex justify-content-md-start justify-content-center">
-                        <section class="signInBackgroundContainer formMargin">
-                            <form class="formMargin" action="/newDriver" method="POST">
+                        <section class="form-container d-flex justify-content-md-start justify-content-center">
+                            <section class="signInBackgroundContainer formMargin">
+                                <form class="formMargin" action="/newDriver" method="POST">
 
-                                <div class="form-row justify-content-center">
-                                    <div class="form-group col-md-10 form-actions">
-                                        <a role="button" class="btn btn-dark justify-content-center" href='./login'>Already an existing member?</a>
+                                    <div class="form-row justify-content-center">
+                                        <div class="form-group col-md-10 form-actions">
+                                            <a role="button" class="btn btn-dark justify-content-center" href='./login'>Already an existing member?</a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-row justify-content-center">
-                                    <div class="form-group col-md-10 noMargin">
-                                        Try Phlebing
-                                    </div>
-                                </div>
-
-                                <div class="form-row justify-content-center">
-                                    <div class="form-group col-md-5">
-                                        <label for="first_name"></label>
-                                        <input type="text" class="form-control" name="first_name" id="inputName" placeholder="First name" required>
-                                    </div>
-                                    <div class="form-group col-md-5">
-                                        <label for="last_name"></label>
-                                        <input type="text" class="form-control" name="last_name" id="inputAge" placeholder="Last Name" required>
-                                    </div>
-                                </div>
-
-                                <div class="form-row justify-content-center">
-                                    <div class="form-group col-md-10">
-                                        <label for="phone_number"></label>
-                                        <input type="tel" class="form-control" name="phone_number" id="inputPhoneNumber" placeholder="Phone Number" required>
+                                    <div class="form-row justify-content-center">
+                                        <div class="form-group col-md-10 noMargin">
+                                            Try Phlebing
+                                        </div>
                                     </div>
 
-                                </div>
-
-                                <div class="form-row justify-content-center">
-                                    <div class="form-group col-md-10">
-                                        <label for="email"></label>
-                                        <input type="email" class="form-control" name="email" id="inputEmail" placeholder="Email" required>
+                                    <div class="form-row justify-content-center">
+                                        <div class="form-group col-md-5">
+                                            <label for="first_name"></label>
+                                            <input type="text" class="form-control" name="first_name" id="inputName" placeholder="First name" required>
+                                        </div>
+                                        <div class="form-group col-md-5">
+                                            <label for="last_name"></label>
+                                            <input type="text" class="form-control" name="last_name" id="inputAge" placeholder="Last Name" required>
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="form-row justify-content-center">
-                                    <div class="form-group col-md-10">
-                                        <label for="username"></label>
-                                        <input type="text" class="form-control" name="username" id="InputUsername" placeholder="Username" required>
+                                    <div class="form-row justify-content-center">
+                                        <div class="form-group col-md-10">
+                                            <label for="phone_number"></label>
+                                            <input type="tel" class="form-control" name="phone_number" id="inputPhoneNumber" placeholder="Phone Number" required>
+                                        </div>
+
                                     </div>
-                                </div>
 
-                                <div class="form-row justify-content-center">
-                                    <div class="form-group col-md-10">
-                                        <label for="password"></label>
-                                        <input type="password" class="form-control" name="password" id="InputPassword" placeholder="Password" required>
+                                    <div class="form-row justify-content-center">
+                                        <div class="form-group col-md-10">
+                                            <label for="email"></label>
+                                            <input type="email" class="form-control" name="email" id="inputEmail" placeholder="Email" required>
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="form-row justify-content-center">
-                                    <div class="form-group col-md-10">
-                                        <label for="vpassword"></label>
-                                        <input type="password" class="form-control" name="vpassword" id="InputVPassword" placeholder="Verify Password" required>
+                                    <div class="form-row justify-content-center">
+                                        <div class="form-group col-md-10">
+                                            <label for="username"></label>
+                                            <input type="text" class="form-control" name="username" id="InputUsername" placeholder="Username" required>
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="form-row justify-content-center">
-                                    <div class="form-group col-md-10">
-                                        <button type="submit" class="btn btn-primary">Submit!</button>
+                                    <div class="form-row justify-content-center">
+                                        <div class="form-group col-md-10">
+                                            <label for="password"></label>
+                                            <input type="password" class="form-control" name="password" id="InputPassword" placeholder="Password" required>
+                                        </div>
                                     </div>
-                                </div>
 
-                            </form>
+                                    <div class="form-row justify-content-center">
+                                        <div class="form-group col-md-10">
+                                            <label for="vpassword"></label>
+                                            <input type="password" class="form-control" name="vpassword" id="InputVPassword" placeholder="Verify Password" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row justify-content-center">
+                                        <div class="form-group col-md-10">
+                                            <button type="submit" class="btn btn-primary">Submit!</button>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </section>
                         </section>
                     </section>
                 </section>
-            </section>
+            <!-- </section> -->
 
 
         </main>
