@@ -45,14 +45,21 @@ body {
 .maxHeight {
     height: 100%;
 }
+.icon {
+    padding: 10px;
+    background: dodgerblue;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+  }
 
 .background-login {
-    background-color: #e8175d;
+    background-color: #00897b;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
-    min-width: 560px;
-    min-height: 540px;
+    /* height: 100vh; */
+    /* min-width: 560px; */
+    min-height: 100%;
 }
 
 .pattern-background {
@@ -152,6 +159,9 @@ main {
 }
 
 .widthMax {
+    width: 100%;
+}
+.max-width {
     width: 100%;
 }
 
@@ -751,6 +761,12 @@ a:focus {
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
     object-fit: cover;
+}
+
+.cityIMG {
+    object-fit: cover;
+    max-width: 1920px;
+    width:100%;
 }
 
 /* #crop-the-cats {

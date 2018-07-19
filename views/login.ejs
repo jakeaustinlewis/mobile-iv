@@ -24,55 +24,67 @@
     <% include partials/navBar %>
 
         <main>
-            <section class="background-login">
-                <!-- form card login -->
-                <div class="">
-                    <section class="d-flex justify-content-center">
-                        <section class="login-container loginMargin">
-                            <div class="card-header">
+            <section class="container-fluid">
+                <section class="row d-flex justify-content-center background-login">
+                    <!-- <section class=""> -->
+                    <section class="col col-md-3 p-0 pt-md-5">
+                        <div class="card-header">
 
-                                <h3 class="mb-0">Login</h3>
-                            </div>
+                            <h3 class="mb-0 white-text">Login</h3>
 
-                            <section class="d-flex justify-content-center">
-                                <% if (error==='null' || error !== undefined || error!==null) {%>
-                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on bottom">
-                                        <%=error%>
-                                    </button>
+                        </div>
 
-                                    <%}%>
+                        <section class="d-flex justify-content-center">
+                            <% if (error==='null' || error !== undefined || error!==null) {%>
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on bottom">
+                                    <%=error%>
+                                </button>
 
-                            </section>
-                            <div class="card-body">
-                                <form class="formMargin" action="/login" method="POST">
+                                <%}%>
 
-                                    <div class="form-row justify-content-center">
-                                        <div class="form-group col-md-10">
-                                            <label for="username">Username</label>
-                                            <input type="text" class="form-control" name="username" id="inputUsername" placeholder="">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-row justify-content-center">
-                                        <div class="form-group col-md-10">
-                                            <label for="Password">Password</label>
-                                            <input type="password" class="form-control" name="Password" id="inputPassword" placeholder="">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-row justify-content-center">
-                                        <div class="form-group col-md-10">
-                                            <button type="submit" class="btn btn-primary">Submit!</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <!--/card-block-->
                         </section>
+                        <div class="card-body d-flex justify-content-center">
+                            <form class="formMargin max-width" action="/login" method="POST">
+
+                                <div class="form-row justify-content-center">
+                                    <div class="form-group col-md-10">
+                                        <label class="white-text" for="username">Username</label>
+                                        <input type="text" class="form-control" name="username" id="inputUsername" placeholder="">
+
+                                    </div>
+                                </div>
+
+                                <div class="form-row justify-content-center">
+                                    <div class="form-group col-md-10">
+                                        <label class="white-text" for="Password">Password</label>
+                                        <section class="d-flex">
+                                            <input type="password" class="form-control" name="Password" id="inputPassword" placeholder="">
+                                        </section>
+                                    </div>
+                                </div>
+
+                                <div class="form-row justify-content-center">
+                                    <div class="form-group col-md-10">
+                                        <button type="submit" class="btn btn-primary">Submit!</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                        <!--/card-block-->
                     </section>
-                </div>
-                <!-- /form card login -->
+
+
+                    <!-- </section> -->
+
+                    <!-- /form card login -->
+                    <!-- </section> -->
+                    <img class="cityIMG" src="../pictures/city-background.png" alt="city">
+                </section>
+
+
             </section>
+
 
         </main>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
