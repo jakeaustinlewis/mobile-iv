@@ -94,11 +94,12 @@ main {
     height: 275px;
 }
 
-.frontPageFlex {
-    display: flex;
-    justify-content: center;
+/* .frontPageFlex {
+    display: flex; */
+    /* justify-content: center; */
+    /* align-items: center;
     flex-wrap: wrap-reverse;
-}
+} */
 
 .form-container {
     position: relative;
@@ -146,18 +147,26 @@ main {
     /* Specify a stack order in case you're using a different order for other elements */
 }
 
+.textWidthFrontPage {
+    width: 350px;
+}
+
+.widthMax {
+    width: 100%;
+}
+
 
 @media (min-width: 768px) {
     .frontPageCharacter {
         width: 247.625px;
         height: 350px;
     }
-    .frontPageFlex {
+    /* .frontPageFlex {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap-reverse;
-    }
+    } */
     .form-container {
         position: relative;
         width: 70%;
@@ -199,7 +208,12 @@ main {
         z-index: 2;
         /* Specify a stack order in case you're using a different order for other elements */
     }
-    
+    .textWidthFrontPage {
+        width: auto;
+    }
+    .widthMax {
+        width: auto;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -207,20 +221,20 @@ main {
         width: 318.375px;
         height: 450px;
     }
-    .frontPageFlex {
+    /* .frontPageFlex {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
+    } */
 }
 
 @media (min-width: 992px) {
-    .frontPageFlex {
+    /* .frontPageFlex {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap-reverse;
-    }
+    } */
 }
 
 .navbar-fixed-top {
