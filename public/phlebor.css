@@ -21,13 +21,13 @@ body {
     box-sizing: border-box;
 }
 
-.backgroud-image {
+.green-background {
     background-color: #3bafa9;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    min-width: 560px;
-    min-height: 540px;
+    /* min-width: 560px; */
+    min-height: 100%;
     /* margin-top: -55px; */
 }
 
@@ -155,6 +155,9 @@ main {
     width: 100%;
 }
 
+.frontPageContainerHeight {
+    height: auto;
+}
 
 @media (min-width: 768px) {
     .frontPageCharacter {
@@ -213,6 +216,9 @@ main {
     }
     .widthMax {
         width: auto;
+    }
+    .frontPageContainerHeight {
+        height: 100%;
     }
 }
 
@@ -346,6 +352,7 @@ main {
 .full-height {
     height: 100%;
 }
+
 
 /* .navbar-dark .navbar-brand {
     color: white;
