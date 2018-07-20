@@ -27,12 +27,8 @@
             <section class="container-fluid">
                 <section class="row d-flex justify-content-center background-login">
                     <!-- <section class=""> -->
-                    <section class="col col-md-3 p-0 pt-md-5">
-                        <div class="card-header">
-
-                            <h3 class="mb-0 white-text">Login</h3>
-
-                        </div>
+                    <section class="col-10 col-md-8 col-lg-4 p-0 pt-md-5">
+                        
 
                         <section class="d-flex justify-content-center">
                             <% if (error==='null' || error !== undefined || error!==null) {%>
@@ -43,29 +39,34 @@
                                 <%}%>
 
                         </section>
-                        <div class="card-body d-flex justify-content-center">
+                        <div class="card-header p-0">
+
+                                <h3 class="mb-0 white-text">Login</h3>
+    
+                            </div>
+                        <div class="card-body d-flex justify-content-center p-0">
                             <form class="formMargin max-width" action="/login" method="POST">
 
                                 <div class="form-row justify-content-center">
-                                    <div class="form-group col-md-10">
+                                    <div class="form-group col-md-12">
                                         <label class="white-text" for="username">Username</label>
-                                        <input type="text" class="form-control" name="username" id="inputUsername" placeholder="">
+                                        <input type="text" class="form-control borderRadiusZero" name="username" id="inputUsername" placeholder="Username">
 
                                     </div>
                                 </div>
 
                                 <div class="form-row justify-content-center">
-                                    <div class="form-group col-md-10">
+                                    <div class="form-group col-md-12">
                                         <label class="white-text" for="Password">Password</label>
                                         <section class="d-flex">
-                                            <input type="password" class="form-control" name="Password" id="inputPassword" placeholder="">
+                                            <input type="password" class="form-control borderRadiusZero" name="Password" id="inputPassword" placeholder="Password">
                                         </section>
                                     </div>
                                 </div>
 
                                 <div class="form-row justify-content-center">
-                                    <div class="form-group col-md-10">
-                                        <button type="submit" class="btn btn-primary">Submit!</button>
+                                    <div class="form-group col-md-12">
+                                        <button type="submit" class="btn btn-primary max-width borderRadiusZero">Submit!</button>
                                     </div>
                                 </div>
                             </form>

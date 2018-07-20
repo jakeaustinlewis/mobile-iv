@@ -21,15 +21,6 @@ body {
     box-sizing: border-box;
 }
 
-.green-background {
-    background-color: #3bafa9;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    /* min-width: 560px; */
-    min-height: 100%;
-    /* margin-top: -55px; */
-}
 
 .background-new-client {
     background-color: #F1F1F1;
@@ -45,6 +36,10 @@ body {
 .maxHeight {
     height: 100%;
 }
+
+.borderRadiusZero {
+    border-radius: 0px;
+}
 .icon {
     padding: 10px;
     background: dodgerblue;
@@ -54,7 +49,7 @@ body {
   }
 
 .background-login {
-    background-color: #00897b;
+    background-color: #3bafa9;
     background-size: cover;
     background-repeat: no-repeat;
     /* height: 100vh; */
@@ -165,8 +160,23 @@ main {
     width: 100%;
 }
 
+.card-header {
+    background-color: transparent;
+    border-bottom: solid 2px white;
+}
+
 .frontPageContainerHeight {
     height: auto;
+}
+
+.green-background {
+    background-color: #3bafa9;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    /* min-width: 560px; */
+    min-height: 100%;
+    /* margin-top: -76px; */
 }
 
 @media (min-width: 768px) {
@@ -224,11 +234,18 @@ main {
     .textWidthFrontPage {
         width: auto;
     }
-    .widthMax {
-        width: auto;
-    }
+
     .frontPageContainerHeight {
         height: 100%;
+    }
+    .green-background {
+        background-color: #3bafa9;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        /* min-width: 560px; */
+        min-height: 100%;
+        margin-top: -76px;
     }
 }
 
