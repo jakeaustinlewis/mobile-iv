@@ -121,7 +121,6 @@ main {
 .body-container {
     position: relative;
     width: 90%;
-    margin: 0px auto 0px auto;
     box-sizing: border-box;
     /* height: 100vh; */
     height: 100%;
@@ -178,6 +177,12 @@ main {
     min-height: 100%;
     /* margin-top: -76px; */
 }
+.signUpTitle {
+    font-size: 32px;
+}
+.signUpSubTitle {
+    font-size: 24px;
+}
 
 @media (min-width: 768px) {
     .frontPageCharacter {
@@ -206,7 +211,7 @@ main {
     .body-container {
         position: relative;
         width: 80%;
-        margin: 0px auto 0px auto;
+        /* margin: 0px auto 0px auto; */
         box-sizing: border-box;
         /* height: 100vh; */
         height: 100%;
@@ -247,6 +252,13 @@ main {
         min-height: 100%;
         margin-top: -76px;
     }
+    .signUpTitle {
+        font-size: 68px;
+    }
+    .signUpSubTitle {
+        font-size: 50px;
+    }
+
 }
 
 @media (min-width: 1024px) {
@@ -254,12 +266,10 @@ main {
         width: 318.375px;
         height: 450px;
     }
-    /* .frontPageFlex {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    } */
-}
+
+} 
+
+
 
 @media (min-width: 992px) {
     /* .frontPageFlex {
@@ -268,6 +278,7 @@ main {
         align-items: center;
         flex-wrap: wrap-reverse;
     } */
+
 }
 
 .navbar-fixed-top {
