@@ -55,7 +55,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(session({
     store: new FileStore,
     name: 'server-session-cookie-id',
-    secret: process.env.COOKIE_SESSION_SECRET,
+    // secret: process.env.COOKIE_SESSION_SECRET,
+    secret: 'keyboard cat',
     resave: false,
     saveUninitialized: false
 }));
