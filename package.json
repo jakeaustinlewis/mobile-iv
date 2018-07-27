@@ -2,7 +2,7 @@
   "name": "mobile-iv",
   "version": "1.0.0",
   "description": "# A project description For the Q2 Project, it brings me great joy to propose an idea that will provide a quick and painless service to ameliorate the adverse effects of dehydration to those in need. Hydradro.io, a mobile friendly and web application, allows users to request an intravenous therapy service delivered right to their location, no matter how absurd.",
-  "main": "index.js",
+  "main": "restfulExpressServer.js",
   "scripts": {
     "start": "node restfulExpressServer.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,6 +23,7 @@
     "body-parser": "^1.18.3",
     "config": "^1.30.0",
     "cookie-parser": "^1.4.3",
+    "dotenv": "^6.0.0",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
     "express-session": "^1.15.6",

@@ -21,7 +21,6 @@ body {
     box-sizing: border-box;
 }
 
-
 .background-new-client {
     background-color: #F1F1F1;
     position: absolute;
@@ -40,6 +39,7 @@ body {
 .borderRadiusZero {
     border-radius: 0px;
 }
+
 .icon {
     padding: 10px;
     background: dodgerblue;
@@ -183,6 +183,7 @@ main {
 .signUpSubTitle {
     font-size: 24px;
 }
+
 
 @media (min-width: 768px) {
     .frontPageCharacter {

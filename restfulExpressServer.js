@@ -1,4 +1,7 @@
 'use strict';
+require('dotenv').config();
+
+console.log('Environment Vars', process.env.COOKIE_SESSION_SECRET, process.env.FACEBOOK_APP_ID);
 
 let express = require('express');
 let path = require('path');
@@ -45,18 +48,14 @@ app.use(bodyParser.json()); //tells the system that you want json to be used ---
 app.use(bodyParser.urlencoded({
     extended: true
 }));
-// app.use(methodOverride(function (req, res) {
-//     let method = req.body._method
-//     delete req.body._method
-//     return method
-// }))
+
 
 app.use(express.static(path.join(__dirname, 'public')));
 // app.use(express.static('./public'));
 app.use(session({
     store: new FileStore,
     name: 'server-session-cookie-id',
-    secret: 'keyboard cat',
+    secret: process.env.COOKIE_SESSION_SECRET,
     resave: false,
     saveUninitialized: false
 }));
